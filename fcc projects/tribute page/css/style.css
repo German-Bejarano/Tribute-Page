@@ -1,0 +1,252 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  transition: ease-in-out 100ms;
+}
+
+html{
+  background-color: rgb(255, 252, 252);
+}
+
+#main{
+  margin: 40px;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 200px;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+#title{
+  color: yellow;
+  font-size: 3.7rem;
+  padding: 60px;
+  text-transform: uppercase;
+  text-shadow: 8px 2px 5px red;
+}
+
+#img-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+  border-radius: 40px;
+  width: 60%;
+}
+
+#image{
+  display: block;
+  margin: auto;
+  /*width:400px;
+  height:300px;*/
+  max-width: 60%;
+  position: center;
+
+}
+
+#img-caption{
+  display: none;
+  position: absolute;
+  bottom:169px;
+  right: 620px;
+  color: black;
+  font-size: 1.1rem;
+  padding: 0px;
+  background-color: white;
+}
+
+#img-div:hover #img-caption{
+  display:block;
+}
+
+#img-div:hover{
+  box-shadow: 30px 30px 100px red;
+}
+
+h2{
+  color: rgb(237, 111, 201);
+  font-size: 2.4rem;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+#tribute-info{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  padding-bottom: 50px;
+  padding-top:50px;
+}
+
+.his-life{
+  width: 45%;
+}
+
+.discography{
+  display: flex;
+  width:45%;
+  list-style-position: inside;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.his-life p{
+  margin-left: 70px;
+  width:85%;
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+li{
+  text-align: left;
+}
+
+ul{
+padding-left: 100px;
+font-size: 1rem;
+line-height: 25px;
+
+}
+
+#tribute-link{
+  display: block;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: rgb(237, 111, 201);
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 30px 40px;
+  width:500px;
+  border-radius: 20px;
+}
+
+#tribute-link:link,
+#tribute-link:visited{
+  color: rgb(237, 111, 201);
+  border: 2px solid rgb(237, 111, 201);
+
+
+
+}
+
+#tribute-link:hover,
+#tribute-link:hover:visited{
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+@media only screen and (max-width:500px)
+{
+  #main{
+    width:95%;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+
+  #title{
+    font-size: 3.9rem;
+    border-bottom: 5px solid rgba(237, 42, 42, 0.7);
+    padding: 0;
+    padding-top: 35px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 35px;
+
+
+
+  }
+
+  #img-div{
+    margin: auto;
+    width: 98%;
+    border-radius: 30px;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  #img-div:hover{
+    box-shadow: 0px 0px 0px black;
+  }
+
+  #image{
+    display: block;
+    border-radius: 30px;
+    max-width: 140%;
+    width:140%;
+    height: 100%;
+    margin:auto;
+    margin-left: -50px;
+
+}
+
+#tribute-info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 10px;
+  width:98%;
+}
+
+.his-life{
+  max-width: 98%;
+  width: 98%;
+}
+
+.his-life h2{
+  font-size: 3.3rem;
+}
+
+.his-life p{
+  width:98%;
+  max-width: 98%;
+  margin:0 auto;
+  padding:0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.discography{
+  max-width: 98%;
+  width: 98%;
+}
+
+.discography h2{
+  font-size: 3.3rem;
+}
+
+.discography ul{
+  width:98%;
+  max-width: 98%;
+  margin:0 auto;
+  padding:0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.discography li{
+  padding:6px;
+}
+
+#tribute-link{
+  max-width:90%;
+  width:80%;
+  font-size: 1.9rem;
+  padding:15px 30px;
+  margin-top: 40px;
+}
+
+
+
+
+
+}
